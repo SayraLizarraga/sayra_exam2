@@ -36,7 +36,7 @@
             
         </thead>
         <tbody>
-            @foreach ($Men as $hero)
+            @foreach ($pokemon)
                 <td>{{$pokemon->id}}</td>
                 <td>{{$pokemon->name}}</td>
                 <td>{{$pokemon->height}}</td>
@@ -46,12 +46,5 @@
         </tbody>
         @endforeach
         </table>
-        <a href="{{route ('welcome')}}">Go to welcome page</a>
-        <br>
-        <a href= "{{route ('example')}}">Go to Example page</a>
-        <br>
-        <a href="{{route ('heros_w')}}">Go to Female super heroes page</a>
-        <br>
-        <a href="{{route ('heros')}}">Go to Super heroes page</a>
     </body>
 </html>

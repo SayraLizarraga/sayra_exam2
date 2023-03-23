@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\pokemonController;
+use App\Http\Controllers\table_pokemonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +17,4 @@ use App\Http\Controllers\pokemonController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get ('/pokemon', [pokemonController:: class, 'index']) -> name ('pokemon');
+Route::get ('/pokemon', [table_pokemonController:: class, 'index']) -> name ('pokemon');
